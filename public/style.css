@@ -1,0 +1,241 @@
+body {
+    padding: 25px;
+    background-color: rgb(37, 36, 36);
+    color: rgb(251, 246, 246);
+    font-size: 25px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dark-mode {
+    background-color: rgb(255, 255, 255);
+    color: rgb(37, 36, 36);
+}
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+section {
+    display: inline-block;
+    max-width: max-content;
+}
+
+.inrbtc,
+.lastbtns {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.inrbtc {
+    margin-top: 20px;
+    margin-left: 20%;
+}
+
+.inrbtc li {
+    background-color: rgb(67, 66, 66);
+    height: 25px;
+    padding: 5px;
+    margin-top: -15px;
+    border-radius: 10px;
+    height: 5vh;
+}
+
+.lastbtns {
+    margin-left: 10%;
+}
+
+.inrbtc li,
+.lastbtns li {
+    width: fit-content;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.number {
+    color: #17a2b8;
+    border: 2px solid #17a2b8;
+    border-radius: 50px;
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.telegram {
+    background-color: #17a2b8;
+    height: 5vh;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+.fa-telegram {
+    background-color: #17a2b8;
+}
+
+.switch {
+    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4a4949;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color:#17a2b8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #4a4949;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #fffefe;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 250, 250);
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 100%;
+    font-size: 25px;
+    margin-left: -15px;
+    border-radius: 10px;
+
+}
+.dropdown-content a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* logo css */
+.logo{
+    margin-top: -15px;
+}
+.holdinfo{
+    font-size: 60px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #17a2b8;
+}
+.logo p, span{
+    font-weight: 100;
+    text-transform: capitalize;
+    /* color: #17a2b8; */
+}
+#powered{
+    font-weight: 600;
+    color: #605d5d;
+    margin-top: 0px;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+#finstreet{
+    color: #17a2b8;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-weight: 400;
+}
+
+
+/* css table*/
+.info-div{
+    text-align: center;
+}
+.header{  
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .data{
+    background-color: rgb(45, 45, 49);
+    border-radius: 10px;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(252, 250, 250);
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 0px;
+    font-weight: 700;
+  }
+  .data li{
+    margin-top: 7px;
+    margin-left: 120px;
+  }
+  #datahead {
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: rgb(77, 75, 75);
+    list-style: none;
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  #datahead li{
+    margin-left: 150px;
+  }

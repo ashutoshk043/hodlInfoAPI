@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+    <div class="Navbar">
+        <section class="logo">
+            <span class="holdinfo">hodlinfo</span><span class="com">.com<span>
+                    <p id="powered">Powered by<span id="finstreet"> finstreet</span> </p>
+        </section>
+
+        <section class="inrbtc">
+            <li class="dropdown">
+                <span>INR <i class="fa-solid fa-angle-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <p class="drop">INR</p>
+                    </a>
+            </li>
+            <li class="dropdown">
+                <span>BTC <i class="fa-solid fa-angle-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <p class="drop">ETH</p>
+                    </a>
+                    <a href="#">
+                        <p class="drop">ETH</p>
+                    </a>
+            </li>
+            </li>
+        </section>
+        <section class="lastbtns">
+            <li class="number">58</li>
+            <li class="telegram"><i class="fa-brands fa-telegram"></i> Connect Telegram</li>
+            <li>
+                <label class="switch">
+                    <input type="checkbox" checked onclick="myFunction()">
+                    <span class="slider round"></span>
+                </label>
+            </li>
+        </section>
+    </div>
+
+    <div class="info-div">
+            <div id="datahead">
+                <li id="hash">#</li>
+                <li>Name</li>
+                <li>Last</li>
+                <li>Buy / Sell Price</li>
+                <li>Volume</li>
+                <li>Base_unit</li>
+            </div>
+            <div class="data">
+                <li>1</li>
+                <li>WazirX</li>
+                <li>₹ 14,24,852</li>
+                <li>₹ 14,15,710 / ₹ 14,24,852</li>
+                <li>286.1792</li>
+                <li>BTC</li>
+            </div>
+             <div class="data">
+                <li>2</li>
+                <li>WazirX</li>
+                <li>₹ 14,24,852</li>
+                <li>₹ 14,15,710 / ₹ 14,24,852</li>
+                <li>286.1792</li>
+                <li>BTC</li>
+            </div>
+    </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>
